@@ -32,7 +32,7 @@ describe('Profile', () => {
   });
 
   it('includes the description in a div', () => {
-    expect(ProfileWrapper.find('.description')).to.have.html('<div class="description">Cozy coffee shop featuring a rustic, woody asthetic and west-coast Stumptown coffee</div>')
+    expect(ProfileWrapper.find('.description')).to.have.html('<div className="description">Cozy coffee shop featuring a rustic, woody asthetic and west-coast Stumptown coffee</div>')
   });
 
   it('changes information if a different shop is passed in as a prop', () => {
@@ -48,7 +48,7 @@ describe('Profile', () => {
 
     expect(ProfileWrapper.find('h1')).to.have.html('<h1>Profile for Gorilla Coffee</h1>');
     expect(ProfileWrapper.find('p')).to.have.html('<p>Just off of Flatbush Ave.</p>');
-    expect(ProfileWrapper.find('.description')).to.have.html('<div class="description">Small but calm, their coffee is pricey</div>');
+    expect(ProfileWrapper.find('.description')).to.have.html('<div className="description">Small but calm, their coffee is pricey</div>');
   })
 })
 
